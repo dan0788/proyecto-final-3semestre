@@ -20,7 +20,7 @@ return new class extends Migration {
             $table->integer('Numero_factura');
             $table->string('Proveedor', 80);
             $table->integer('Total_bienes');
-            $table->float('Valor_total');
+            $table->float('Valor_total',25);
             $table->date('Fecha_factura');
             $table->timestamps();
         });
