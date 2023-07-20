@@ -10,7 +10,8 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('salidas_almacen', function (Blueprint $table) {
+        Schema::create('salida_almacens', function (Blueprint $table) {
+            $table->integer('id')->default(1);
             $table->id('Num_salida');
             $table->string('Empleado', 80);
             $table->date('Fecha_salida');

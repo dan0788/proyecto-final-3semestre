@@ -11,11 +11,12 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('facturas', function (Blueprint $table) {
+            $table->integer('id')->default(1);
             $table->id('Numero_entrada');
             $table->unsignedBigInteger('Num_salida');
             $table->foreign('Num_salida')
                 ->references('Num_salida')
-                ->on('salidas_almacen')
+                ->on('salida_almacens')
                 ->onUpdate('cascade');
             $table->integer('Numero_factura');
             $table->string('Proveedor', 80);

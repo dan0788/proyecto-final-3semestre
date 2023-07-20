@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Responsable extends Model
 {
     use HasFactory;
+    public function solicitud(){
+        return $this->hasMany(Solicitud::class);
+    }
 }

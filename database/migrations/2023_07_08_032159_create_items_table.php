@@ -11,11 +11,12 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('items', function (Blueprint $table) {
+            $table->integer('id')->default(1);
             $table->id('id_item');
             $table->unsignedBigInteger('id_solicitud');
             $table->foreign('id_solicitud')
                 ->references('id_solicitud')
-                ->on('solicitudes')
+                ->on('solicituds')
                 ->onUpdate('cascade');
             $table->unsignedBigInteger('Numero_entrada');
             $table->foreign('Numero_entrada')
@@ -25,7 +26,7 @@ return new class extends Migration {
             $table->unsignedBigInteger('Numero_orden');
             $table->foreign('Numero_orden')
                 ->references('Numero_orden')
-                ->on('ordenes_contractuales')
+                ->on('orden_contractuals')
                 ->onUpdate('cascade');
             $table->string('Nombre_bien', 80);
             $table->integer('Cantidad');

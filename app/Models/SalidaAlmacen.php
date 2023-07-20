@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class SalidaAlmacen extends Model
 {
     use HasFactory;
+    public function factura()
+    {
+        return $this->hasMany(Factura::class);
+    }
 }

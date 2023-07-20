@@ -17,10 +17,11 @@ class ResponsableFactory extends Factory
     public function definition(): array
     {
         return [
-            'date' => $this->faker->date(),
+            'Fecha' => $this->faker->date(),
             'Nombre' => $this->faker->name(),
             'Nombre_responsable' => $this->faker->name(),
-            'Cedula' => $this->faker->numberBetween($min = 0411111111, $max = 0499999999)
+            'Cedula' => $this->faker->randomNumber() /* como alternativa se coloca randomNumber 
+            para crear un id */
         ];
     }
 }

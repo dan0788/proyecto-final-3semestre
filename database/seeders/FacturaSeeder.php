@@ -13,6 +13,6 @@ class FacturaSeeder extends Seeder
      */
     public function run(): void
     {
-        Factura::factura(30)->create();
+        Factura::factory(30)->create();
     }
 }

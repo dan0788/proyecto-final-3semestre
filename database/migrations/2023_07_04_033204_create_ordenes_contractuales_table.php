@@ -10,7 +10,8 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('ordenes_contractuales', function (Blueprint $table) {
+        Schema::create('orden_contractuals', function (Blueprint $table) {
+            $table->integer('id')->default(1);
             $table->id('Numero_orden');
             $table->string('NIT', 80);
             $table->string('Nombre_proveedor', 80);

@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Bien extends Model
 {
     use HasFactory;
+    public function orden_contractual(){
+        return $this->belongsTo(OrdenContractual::class);
+    }
 }

@@ -10,12 +10,13 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('bienes', function (Blueprint $table) {
+        Schema::create('biens', function (Blueprint $table) {
+            $table->integer('id')->default(1);
             $table->id('codigo_unico');
             $table->unsignedBigInteger('Numero_orden');
             $table->foreign('Numero_orden')
                 ->references('Numero_orden') /* campo de referencia */
-                ->on('ordenes_contractuales') /* tabla de referencia */
+                ->on('orden_contractuals') /* tabla de referencia */
                 ->onUpdate('cascade');
             $table->timestamps();
         });
