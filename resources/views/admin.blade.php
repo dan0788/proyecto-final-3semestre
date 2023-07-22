@@ -9,13 +9,6 @@
 @section('content')
     <div class="row">
         <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    <p class="mb-0">You are logged in!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12">
             <h5>Alerts</h5>
             <x-adminlte-alert theme="light" title="Tip">
                 Light theme alert!

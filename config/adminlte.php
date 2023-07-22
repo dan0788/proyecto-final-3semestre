@@ -312,11 +312,24 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
+            'text'        => 'Bienes',
+            'url'         => 'admin/bienes',
+            'icon'        => 'far fa-fw fa-file'
+        ],
+        [
+            'text'        => 'Solicitudes',
+            'url'         => 'admin/solicitudes',
+            'icon'        => 'far fa-fw fa-file'
+        ],
+        [
+            'text'        => 'Ordenes',
+            'url'         => 'admin/ordenes',
+            'icon'        => 'far fa-fw fa-file'
+        ],
+        [
+            'text'        => 'Salidas',
+            'url'         => 'admin/salidas',
+            'icon'        => 'far fa-fw fa-file'
         ],
         ['header' => 'account_settings'],
         [
@@ -330,41 +343,25 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text'    => 'multilevel',
+            'text'    => 'Crear documentos',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Bien',
+                    'url'  => 'admin/bienes/create',
                 ],
                 [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
+                    'text'    => 'Solicitud',
+                    'url'     => 'admin/solicitudes/create'
                 ],
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Orden',
+                    'url'  => 'admin/ordenes/create',
                 ],
+                [
+                    'text' => 'Salida',
+                    'url'  => 'admin/salidas/create',
+                ]
             ],
         ],
         ['header' => 'labels'],
