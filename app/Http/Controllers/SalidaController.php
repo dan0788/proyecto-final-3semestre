@@ -14,4 +14,9 @@ class SalidaController extends Controller
         return view('layouts.salidas',compact('salidas'));
         /* return response()->json(['bienes' => $bienes]); */
     }
+
+    public function store(Request $request)
+    {
+        return view('layouts.create_salidas');
+    }
 }

@@ -4,7 +4,7 @@
 @section('content')
     <div class="small-boxes">
         @foreach ($ordenes as $item)
-            <x-adminlte-small-box title="{{ $item->Numero_orden }}" text="Número de orden - {{ $item->Nombre_proveedor }}"
+            <x-adminlte-small-box title="{{ $item->Numero_orden }}" text="Nombre de proveedor - {{ $item->Nombre_proveedor }}"
                 theme="warning" icon="fas fa-star" class="custom-size" full="false" />
         @endforeach
     </div>

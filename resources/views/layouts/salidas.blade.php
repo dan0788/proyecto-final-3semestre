@@ -5,7 +5,7 @@
     <div class="small-boxes">
         @foreach ($salidas as $item)
             <x-adminlte-small-box title="{{ $item->Num_salida }}" text="Nombre de empleado - {{ $item->Empleado }}"
-                theme="info" icon="fas fa-star" class="custom-size" full="false" />
+                theme="pink" icon="fas fa-star" class="custom-size" full="false" />
         @endforeach
     </div>
 

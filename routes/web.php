@@ -33,8 +33,14 @@ Route::get('/admin', function () {
 }); */
 Route::get('/admin/bienes', [BienController::class, 'index']);
 Route::get('/admin/solicitudes', [SolicitudController::class, 'index']);
-Route::get('/admin/entradas', [EntradaController::class, 'index']);
 Route::get('/admin/ordenes', [OrdenController::class, 'index']);
 Route::get('/admin/salidas', [SalidaController::class, 'index']);
 
-Route::get('/admin/bienes/create',[BienController::class,'store']);
+/* Route::get('/admin/bienes/create',function(){
+    return view('layouts.create_bienes');
+}); */
+/* Route::put('/admin/bienes/create',[BienController::class,'store'])->name('crearBien'); */
+Route::get('/admin/bienes/create',[BienController::class,'store'])->name('crearBien');
+Route::get('/admin/solicitudes/create', [SolicitudController::class, 'store'])->name('crearSolicitud');
+Route::get('/admin/ordenes/create', [OrdenController::class, 'store'])->name('crearOrden');
+Route::get('/admin/salidas/create', [SalidaController::class, 'store'])->name('crearSalida');

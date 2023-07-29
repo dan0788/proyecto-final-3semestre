@@ -292,12 +292,12 @@ return [
     'menu' => [
         // Navbar items:
         [
-            'type'         => 'navbar-search',
-            'text'         => 'search',
+            'type' => 'navbar-search',
+            'text' => 'search',
             'topnav_right' => true,
         ],
         [
-            'type'         => 'fullscreen-widget',
+            'type' => 'fullscreen-widget',
             'topnav_right' => true,
         ],
 
@@ -308,77 +308,77 @@ return [
         ],
         [
             'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'url' => 'admin/blog',
+            'can' => 'manage-blog',
         ],
         [
-            'text'        => 'Bienes',
-            'url'         => 'admin/bienes',
-            'icon'        => 'far fa-fw fa-file'
+            'text' => 'Bienes',
+            'url' => 'admin/bienes',
+            'icon' => 'far fa-fw fa-file'
         ],
         [
-            'text'        => 'Solicitudes',
-            'url'         => 'admin/solicitudes',
-            'icon'        => 'far fa-fw fa-file'
+            'text' => 'Solicitudes',
+            'url' => 'admin/solicitudes',
+            'icon' => 'far fa-fw fa-file'
         ],
         [
-            'text'        => 'Ordenes',
-            'url'         => 'admin/ordenes',
-            'icon'        => 'far fa-fw fa-file'
+            'text' => 'Ordenes',
+            'url' => 'admin/ordenes',
+            'icon' => 'far fa-fw fa-file'
         ],
         [
-            'text'        => 'Salidas',
-            'url'         => 'admin/salidas',
-            'icon'        => 'far fa-fw fa-file'
+            'text' => 'Salidas',
+            'url' => 'admin/salidas',
+            'icon' => 'far fa-fw fa-file'
         ],
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
-            'url'  => 'admin/settings',
+            'url' => 'admin/settings',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
             'text' => 'change_password',
-            'url'  => 'admin/settings',
+            'url' => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text'    => 'Crear documentos',
-            'icon'    => 'fas fa-fw fa-share',
+            'text' => 'Crear documentos',
+            'icon' => 'fas fa-fw fa-share',
             'submenu' => [
                 [
                     'text' => 'Bien',
-                    'url'  => 'admin/bienes/create',
+                    'url' => 'admin/bienes/create',
                 ],
                 [
-                    'text'    => 'Solicitud',
-                    'url'     => 'admin/solicitudes/create'
+                    'text' => 'Solicitud',
+                    'url' => 'admin/solicitudes/create'
                 ],
                 [
                     'text' => 'Orden',
-                    'url'  => 'admin/ordenes/create',
+                    'url' => 'admin/ordenes/create',
                 ],
                 [
                     'text' => 'Salida',
-                    'url'  => 'admin/salidas/create',
+                    'url' => 'admin/salidas/create',
                 ]
             ],
         ],
         ['header' => 'labels'],
         [
-            'text'       => 'important',
+            'text' => 'important',
             'icon_color' => 'red',
-            'url'        => '#',
+            'url' => '#',
         ],
         [
-            'text'       => 'warning',
+            'text' => 'warning',
             'icon_color' => 'yellow',
-            'url'        => '#',
+            'url' => '#',
         ],
         [
-            'text'       => 'information',
+            'text' => 'information',
             'icon_color' => 'cyan',
-            'url'        => '#',
+            'url' => '#',
         ],
     ],
 

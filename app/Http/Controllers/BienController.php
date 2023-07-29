@@ -22,18 +22,24 @@ class BienController extends Controller
 
     public function show($id)
     {
-        $bien = Bien::findOrFail($id);
-        return $this->successResponse($bien);
+        $bienes = Bien::findOrFail($id);
+        return $this->successResponse($bienes);
     }
 
     public function store(Request $request)
     {
-        /* $rules = [
+        /* $data = $request->validate([
             'Numero_orden' => 'max:255|min:0'
-        ]; */
-        /* $this->validate($request, $rules);
-        $bien = Bien::create($request->all()); */
+        ]);
+        Bien::create($data);  */
+        /* $numeroOrden=$request->input('numeroOrden'); */
+        /* return view('layouts.create_bienes',compact('rules')); */
+        /* $numeroOrden = $request->query('numero_orden');
+        $bien = new Bien();
+        $bien->Numero_orden = $numeroOrden;
+        $bien->save(); */
         return view('layouts.create_bienes');
+        /* return redirect()->route('/admin/bienes'); */
     }
 
     public function update(Request $request, $id)
